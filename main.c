@@ -2,16 +2,32 @@
 #include <stdlib.h>
 #include <string.h>
 #define PRAISE "You are an extraordinary being."
-//  Í·ÎÄ¼şµÄÉùÃ÷ÖĞ¡£ÓÃ""Ò»°ãÊÇ×Ô¼ºĞ´µÄÍ·ÎÄ¼ş£¬ÓÃ<>ÎªÏµÍ³µÄ£¬ÕâÑùÑ°Ö·µÄµØÖ·²»Í¬£¬¿ÉÒÔÌá¸ßÑ°Ö·ËÙ¶È
+#define SIZE 4
+//  å¤´æ–‡ä»¶çš„å£°æ˜ä¸­ã€‚ç”¨""ä¸€èˆ¬æ˜¯è‡ªå·±å†™çš„å¤´æ–‡ä»¶ï¼Œç”¨<>ä¸ºç³»ç»Ÿçš„ï¼Œè¿™æ ·å¯»å€çš„åœ°å€ä¸åŒï¼Œå¯ä»¥æé«˜å¯»å€é€Ÿåº¦
 
-int main()
+int main(void)
 {
+    printf("===================Hello world!=================\n");
+    printf("%s \n", PRAISE);  // %c å•ä¸ªå­—ç¬¦  //#s å­—ç¬¦ä¸²
+    return 0;
+// C primer 10.8 pnt_add.c    
+    // short datas[SIZE];
+    // short *pti;
+    // short index;
+    // double bills[SIZE];
+    // double *ptf;
 
+    // pti = datas; // å°†æ•°ç»„åœ°å€èµ‹å€¼ç»™æŒ‡é’ˆ
+    // ptf = bills;
+    // printf("%23s %15s\n", "short", "double" );
+    // for (index = 0; index < SIZE ; index++)
+    //     printf("pointers + %d: %10p %10p\n", index, pti + index, ptf + index);
+    // return 0;
 
 /*
-//  ============================20180627 Ã¶¾ÙÀàĞÍµÄÁ·Ï°
+//  ============================20180627 æšä¸¾ç±»å‹çš„ç»ƒä¹ 
     int k;
-    enum weekday {sun,mon,tue,wed,thu,fri,sat} day;  //error: stray '243' in program ±íÊ¾ÄãµÄ´úÂëÖĞ´æÔÚºº×ÖµÄ·ûºÅ
+    enum weekday {sun,mon,tue,wed,thu,fri,sat} day;  //error: stray '243' in program è¡¨ç¤ºä½ çš„ä»£ç ä¸­å­˜åœ¨æ±‰å­—çš„ç¬¦å·
     printf("input a number(0--6) \n");
     scanf("%d",&k);
     day=(enum weekday)k;
@@ -38,23 +54,21 @@ int main()
     printf("The phrase of praise has %d letters", strlen(PRAISE));
     printf("and occupies %d memory cells.\n", sizeof PRAISE );
 */
-//  ============================20180619,[Ğ¡¼×Óã-8]
+//  ============================20180619,[å°ç”²é±¼-8]
 /*
     char a,b,c;
     printf("input character  a, b, c:\n");
-    scanf("%c %c %c" , &a , &b , &c);  // ×Ö·ûĞÍÒ»¶¨Òª×¢Òâ¿Õ¸ñ
+    scanf("%c %c %c" , &a , &b , &c);  // å­—ç¬¦å‹ä¸€å®šè¦æ³¨æ„ç©ºæ ¼
     printf("%d,%d,%d\n%c,%c,%c\n",a,b,c,a-32,b-32,c-32);
 */
-//  ============================20180619,[Ğ¡¼×Óã-8]
+//  ============================20180619,[å°ç”²é±¼-8]
 /*
     char a,b;
     printf("input character a&b\n");
     scanf("%c%c",&a,&b);
-    scanf("%c %c",&a,&b); //×¢Òâ¿Õ¸ñÒ²ÊÇANSICµÄÒ»ÖÖ£¬ÕâÀïÊÇ×Ö·ûĞÍ£¬¿Õ¸ñÒ²ÊÇÒ»ÖÖ×Ö·û£¬Èç¹ûÊÇÕûĞÍ£¬Êı×Ö£¬intĞÍ£¬¿Õ¸ñ¾ÍÎŞĞ§
+    scanf("%c %c",&a,&b); //æ³¨æ„ç©ºæ ¼ä¹Ÿæ˜¯ANSICçš„ä¸€ç§ï¼Œè¿™é‡Œæ˜¯å­—ç¬¦å‹ï¼Œç©ºæ ¼ä¹Ÿæ˜¯ä¸€ç§å­—ç¬¦ï¼Œå¦‚æœæ˜¯æ•´å‹ï¼Œæ•°å­—ï¼Œintå‹ï¼Œç©ºæ ¼å°±æ— æ•ˆ
     printf("%c%c\n",a,b);
 */
 //  ============================init
-    printf("===================Hello world!=================\n");
-    printf("%s \n", PRAISE);  // %c µ¥¸ö×Ö·û  //#s ×Ö·û´®
-    return 0;
+
 }
